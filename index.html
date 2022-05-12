@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="media/Logo.svg" rel="icon" type="image/svg">
+    <title>Sign Up!</title>
+    <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <script src="scripts/active.js" defer></script>
+
+</head>
+<body>
+    <div id="main_container">
+        <div id="scene_container">
+            <img src="media/scene.jpg" alt="Small path through the hills">
+            <div id="overlay"><img src="media/Logo.svg" alt="Caventure Logo"><span>aventure</span></div>
+            <div id="footnote"><span>Image by <a href="https://unsplash.com/@djordjevukojicic" target="_blank">Djordje Vukojicic</a> at <a href="https://www.unsplash.com/photos/68Ln0Cj84QE" target="_blank">Unsplash</a></span></div>
+        </div>
+        <div id="text_container">
+            <p id="text_body">Get out and explore now! Find your way and become who you were meant to be.</p>
+            <p id="text_body">Sign up now to start your life, today.</p>
+            <form action="" method="post">
+                <div id="form_body">
+                    <h2>Let's do this!</h2>
+                    <div id="input_box"><label for="firstname">FIRST NAME <abbr title="Required">*</abbr></label><input type="text" id="firstname" name="firstname" required></div>
+                    <div id="input_box"><label for="lastname">LAST NAME <abbr title="Required">*</abbr></label><input type="text" id="lastname" name="lastname" required></div>
+                    <div id="input_box"><label for="email">EMAIL <abbr title="Required">*</abbr></label><input type="email" id="email" name="email" required></div>
+                    <div id="input_box"><label for="number">PHONE NUMBER</label><input type="tel" id="number" name="telnumber"></div>
+                    <div id="input_box"><label for="pass">PASSWORD <abbr title="Required">*</abbr></label><input type="password" id="pass" name="userpass" required></div>
+                    <div id="input_box"><label for="confirmpass">CONFIRM PASSWORD <abbr title="Required">*</abbr></label><input type="password" name="confirmpass" name="confirmpass" required></div>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            Already have an account? <a class="bold" href="_">Log In</a>
+        </div>
+    </div>
+</body>
+</html>

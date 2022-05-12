@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    --mobile-width: min(640px, 100vw);
+    --web-width: 20vw;
+}
+h1 {
+    font-family: 'Patua One', Arial, Helvetica, sans-serif;
+}
+#main_container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+#scene_container{
+    position: relative;
+    background-color: lightgray;
+}
+#scene_container img{
+    width: var(--mobile-width);
+}
+#overlay{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: var(--mobile-width);
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+#overlay img{
+    height: 4rem;
+    width: auto;
+}
+#overlay span{
+   font-family: 'Patua One', Arial, Helvetica, sans-serif;
+   color: white;
+   font-size: 4rem;
+}
+#footnote{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    width: var(--mobile-width);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+}
+a:link{
+    color: white;
+    text-decoration: underline;
+}
+a:visited{
+    color: white;
+}
+#text_container{
+    background-color: rgb(245, 245, 245);
+}
+#text_body{
+    padding: 10px 10px;
+}
+#form_body{
+    background-color: white;
+    box-shadow: 0 -1px 3px grey;
+    box-shadow: 0 3px 3px grey;
+    padding: 5px;
+}
+#input_box{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    max-width: 80vw;
+    font-size: 0.8rem;
+}
+input{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+input:focus{
+    outline: none;
+}
+input:focus-visible{
+    border: 1px solid rgba(0, 0, 255, 0.7);
+    box-shadow: 2px 2px 2px lightgray;
+}
+input:valid{
+    border: 1px solid greenyellow;
+}
+input:optional{
+    border: 1px solid rgb(230, 230, 230);
+}
+
+@media screen and (min-width: 640px){
+    #main_container {
+        flex-direction: row;
+    }
+    #scene_container>img{
+        width: auto;
+        height: 100vh;
+    }
+    #overlay{
+        width: calc(calc(2/3)*100vh);
+    }
+    #overlay span{
+        font-size: 10vh;
+    }
+    #footnote{
+        width: var(--web-width);
+    }
+
+}

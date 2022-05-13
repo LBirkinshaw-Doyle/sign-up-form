@@ -115,6 +115,15 @@ button:active{
     background-color: rgb(43, 150, 43);
     box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.7);
 }
+#log-in{
+    padding: 5px 10px;
+}
+#log-in a{
+    color: rgb(43, 94, 43);
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 @media screen and (min-width: 640px){
     #main_container {

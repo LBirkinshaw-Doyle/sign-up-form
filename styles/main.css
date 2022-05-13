@@ -48,7 +48,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     font-size: smaller;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 a:link{
@@ -96,6 +96,25 @@ input:valid{
 input:optional{
     border: 1px solid rgb(230, 230, 230);
 }
+button{
+    margin: 5px;
+    padding: 5px;
+    width: max(calc(100% - 10px), 300px);
+    border-radius: 15px;
+
+    border: none;
+    background-color: rgb(43, 94, 43);
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    transition: all 1s;
+}
+button:hover{
+    background-color: rgb(43, 150, 43);
+}
+button:active{
+    background-color: rgb(43, 150, 43);
+    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.7);
+}
 
 @media screen and (min-width: 640px){
     #main_container {
@@ -116,7 +135,10 @@ input:optional{
         font-size: 10vh;
     }
     #footnote{
-        width: var(--web-width);
+        width: fit-content;
+    }
+    #footnote span{
+        width: calc(calc(2/3)*100vh);
     }
 
 }

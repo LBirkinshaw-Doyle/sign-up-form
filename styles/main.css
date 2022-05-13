@@ -18,6 +18,8 @@ h1 {
     background-color: lightgray;
 }
 #scene_container img{
+    position: sticky;
+    top: 0%;
     width: var(--mobile-width);
 }
 #overlay{
@@ -58,27 +60,28 @@ a:visited{
 }
 #text_container{
     background-color: rgb(245, 245, 245);
+    overflow: scroll;
 }
 #text_body{
     padding: 10px 10px;
 }
 #form_body{
     background-color: white;
-    box-shadow: 0 -1px 3px grey;
-    box-shadow: 0 3px 3px grey;
+    box-shadow: 0 -1px 3px grey, 0 3px 3px grey;
     padding: 5px;
+    margin-bottom: 15px;
 }
 #input_box{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    max-width: 80vw;
     font-size: 0.8rem;
 }
 input{
     border: 1px solid rgb(230, 230, 230);
     border-radius: 5px;
     font-size: 1rem;
+    max-width: 80vw;
 }
 input:focus{
     outline: none;
@@ -103,6 +106,10 @@ input:optional{
         height: 100vh;
     }
     #overlay{
+        position: sticky;
+        top: 0;
+        bottom: 60vh;
+        z-index: 1;
         width: calc(calc(2/3)*100vh);
     }
     #overlay span{

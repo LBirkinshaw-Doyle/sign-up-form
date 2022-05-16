@@ -149,5 +149,47 @@ button:active{
     #footnote span{
         width: calc(calc(2/3)*100vh);
     }
+    #text_container{
+        flex-grow: 2;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    #scene_container img{
+        position: static;
+        display: block;
+    }
+    #overlay{
+        position: absolute;
+        top: 40vh;
+        bottom: initial;
+        z-index: 1;
+        width: calc(calc(2/3)*100vh);
+    }
+    form{
+        margin: 50px 0;
+    }
+    #form_body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    h2{
+        width: calc(100vw - calc(calc(2/3)*100vh) - 15px);
+    }
+    #input_box{
+        width: 500px;
+        margin: 20px 100px 20px 5px;
+        margin-right: 100px;
+    }
+    input{
+        line-height: 2rem;
+        margin: 5px 5px 5px 0px;
+    }
+    button{
+        margin: 15px;
+        width: 15vw;
+        height: 2vw;
+    }
 
 }
